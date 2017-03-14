@@ -7,29 +7,31 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            LinkedList<int> l1 = new LinkedList<int>();
-            l1.AddLast(7);
-            l1.AddLast(1);
-            l1.AddLast(6);
-            LinkedList<int> l2= new LinkedList<int>();
+            //LinkedList<int> l1 = new LinkedList<int>();
+            //l1.AddLast(7);
+            //l1.AddLast(1);
+            //l1.AddLast(6);
+            //LinkedList<int> l2= new LinkedList<int>();
 
-            l2.AddLast(5);
-            l2.AddLast(9);
-            l2.AddLast(3);
+            //l2.AddLast(5);
+            //l2.AddLast(9);
+            //l2.AddLast(3);
 
-            LinkedList<int> res = calculate(l1, l2);
+            //LinkedList<int> res = calculate(l1, l2);
 
-            LinkedList<int> l3 = new LinkedList<int>();
-            l3.AddLast(0);
-            l3.AddLast(1);
-            l3.AddLast(2);
-            l3.AddLast(3);
-            l3.AddLast(2);
-            l3.AddLast(1);
-            l3.AddLast(0);
+            //LinkedList<int> l3 = new LinkedList<int>();
+            //l3.AddLast(0);
+            //l3.AddLast(1);
+            //l3.AddLast(2);
+            //l3.AddLast(3);
+            //l3.AddLast(2);
+            //l3.AddLast(1);
+            //l3.AddLast(0);
 
-            results results = isPalindrome(l3.First, 7);
+            //results results = isPalindrome(l3.First, 7);
 
+            string exp = "2-6-7*8/2+5";
+            double res = arithmeticcalculator(exp);
         }
 
         //2.5
@@ -108,6 +110,85 @@ namespace ConsoleApp1
             return result;
         }
 
+        private static double arithmeticcalculator(string expression)
+        {
+            Stack<double> numbers = new Stack<double>();
+            Stack<char> operators = new Stack<char>();
+            int stringiterator = 0;
+            char i;
+            double val = 0;
+            while(stringiterator < expression.Length)
+            {
+                i = expression[stringiterator];
+                if (i == '+'||i=='-'||i=='*'||i=='/')
+                {
+                    if(operators.Count == 0 )
+                    {
+                        operators.Push(i);
+                        stringiterator++;
+                        continue;
+                    }
+
+                    while (collapseStack(i, operators.Peek()))
+                    {
+                        double a = numbers.Pop();
+                        double b = numbers.Pop();
+                        char o = operators.Pop();
+                        switch(o.ToString())
+                        {
+                            case "+":
+                                val = b + a;
+                                numbers.Push(val);
+                                stringiterator++;
+                                operators.Push(i);
+                                continue;
+                            case "-":
+                                val = b - a;
+                                numbers.Push(val);
+                                stringiterator++;
+                                operators.Push(i);
+                                continue;
+                            case "*":
+                                val = b * a;
+                                numbers.Push(val);
+                                stringiterator++;
+                                operators.Push(i);
+                                continue;
+                            case "/":
+                                val = b / a;
+                                numbers.Push(val);
+                                stringiterator++;
+                                operators.Push(i);
+                                continue;
+                        }
+
+                    }
+                    operators.Push(i);
+                }
+                else
+                {
+                    numbers.Push(double.Parse(i.ToString()));
+                }
+                stringiterator++;
+             }
+
+            if(numbers.Count != 0)
+            {
+                return numbers.Pop();
+            }
+
+            return 0.0;
+        }
+
+        private static bool collapseStack(char a, char b)
+        {
+            if ((a == '*' || a == '/' )&&(b== '+' || b == '-'))
+            {
+                return false;
+            }
+
+            return true;
+        }
 
     }
 }
