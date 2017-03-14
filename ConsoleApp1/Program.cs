@@ -8,7 +8,7 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             //LinkedList<int> l1 = new LinkedList<int>();
-            //l1.AddLast(7);
+            //l1.AddLast(7);123
             //l1.AddLast(1);
             //l1.AddLast(6);
             //LinkedList<int> l2= new LinkedList<int>();
