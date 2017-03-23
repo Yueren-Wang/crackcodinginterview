@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{A7310927-6949-42FB-9635-76DDEC7AA08A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeAndGraphProject", "TreeAndGraphProject\TreeAndGraphProject.csproj", "{8C753C69-989B-432E-A99F-D1838CA48934}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A7310927-6949-42FB-9635-76DDEC7AA08A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7310927-6949-42FB-9635-76DDEC7AA08A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7310927-6949-42FB-9635-76DDEC7AA08A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C753C69-989B-432E-A99F-D1838CA48934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C753C69-989B-432E-A99F-D1838CA48934}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C753C69-989B-432E-A99F-D1838CA48934}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C753C69-989B-432E-A99F-D1838CA48934}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
