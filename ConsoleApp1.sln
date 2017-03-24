@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeAndGraphProject", "TreeAndGraphProject\TreeAndGraphProject.csproj", "{8C753C69-989B-432E-A99F-D1838CA48934}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathWithSum", "PathWithSum\PathWithSum.csproj", "{B7AB2239-9017-4B8B-B868-6F3C4EB83DEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeAndGraphCommonLib", "TreeAndGraphCommonLib\TreeAndGraphCommonLib.csproj", "{EED77E35-F0FC-481A-B2DE-F0AA8CE652B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{8C753C69-989B-432E-A99F-D1838CA48934}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C753C69-989B-432E-A99F-D1838CA48934}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C753C69-989B-432E-A99F-D1838CA48934}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7AB2239-9017-4B8B-B868-6F3C4EB83DEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7AB2239-9017-4B8B-B868-6F3C4EB83DEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7AB2239-9017-4B8B-B868-6F3C4EB83DEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7AB2239-9017-4B8B-B868-6F3C4EB83DEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EED77E35-F0FC-481A-B2DE-F0AA8CE652B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EED77E35-F0FC-481A-B2DE-F0AA8CE652B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EED77E35-F0FC-481A-B2DE-F0AA8CE652B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EED77E35-F0FC-481A-B2DE-F0AA8CE652B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

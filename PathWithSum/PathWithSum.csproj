@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8C753C69-989B-432E-A99F-D1838CA48934}</ProjectGuid>
+    <ProjectGuid>{B7AB2239-9017-4B8B-B868-6F3C4EB83DEE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TreeAndGraphProject</RootNamespace>
-    <AssemblyName>TreeAndGraphProject</AssemblyName>
+    <RootNamespace>PathWithSum</RootNamespace>
+    <AssemblyName>PathWithSum</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TreeAndGraphCommonLib;
 
 namespace TreeAndGraphProject
 {
@@ -61,20 +62,5 @@ namespace TreeAndGraphProject
             }
             return result;
         }
-    }
-
-    class node
-    {
-        public int value { get; set; }
-        public node left { get; set; }
-        public node right { get; set; }
-        public node(int value, node left, node right)
-        {
-            this.value = value;
-            this.left = left;
-            this.right = right;
-        }
-
-
     }
 }
