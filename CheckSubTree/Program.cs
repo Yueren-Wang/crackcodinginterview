@@ -11,6 +11,24 @@ namespace CheckSubTree
     {
         static void Main(string[] args)
         {
+
+
+
+
+
+
+
+        }
+
+
+        private bool isSubTree(node big, node small)
+        {
+
+        }
+
+        private List<int> traversalAndStoreValueInList(node node, ref List<node> res)
+        {
+
         }
     }
 }

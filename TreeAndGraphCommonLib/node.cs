@@ -18,6 +18,29 @@ namespace TreeAndGraphCommonLib
             this.right = right;
         }
 
+        public node()
+        {
+        }
 
+        private static void preorderTraversal(node node, ref List<node> res, bool keepNullLeaf)
+        {
+            if (node == null)
+            {
+                if (keepNullLeaf)
+                {
+                    node n = new node();
+                    res.Add(n);
+                }
+                return;
+            }
+
+            res.Add(node);
+            preorderTraversal(node.left, ref res, keepNullLeaf);
+            preorderTraversal(node.right, ref res, keepNullLeaf);
+
+        }
     }
+
+   
+
 }
