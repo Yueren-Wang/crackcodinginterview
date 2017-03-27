@@ -22,7 +22,7 @@ namespace TreeAndGraphCommonLib
         {
         }
 
-        private static void preorderTraversal(node node, ref List<node> res, bool keepNullLeaf)
+        public static void preorderTraversal(node node, ref List<node> res, bool keepNullLeaf)
         {
             if (node == null)
             {
@@ -38,6 +38,11 @@ namespace TreeAndGraphCommonLib
             preorderTraversal(node.left, ref res, keepNullLeaf);
             preorderTraversal(node.right, ref res, keepNullLeaf);
 
+        }
+
+        public static bool isSubList(List<int> l1, List<int> l2)
+        {
+            return l1.All(i => l2.Contains(i)) || l2.All(i => l1.Contains(i));
         }
     }
 
