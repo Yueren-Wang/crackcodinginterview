@@ -48,5 +48,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TreeAndGraphCommonLib\TreeAndGraphCommonLib.csproj">
+      <Project>{eed77e35-f0fc-481a-b2de-f0aa8ce652b1}</Project>
+      <Name>TreeAndGraphCommonLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
