@@ -10,9 +10,11 @@ namespace TreeAndGraphCommonLib
     {
         public int value { get; set; }
         public List<graphnode> children { get; set; }
+
+        public bool visited { get; set; }
         public graphnode()
         {
-
+            this.visited = false;
         }
     }
 }
