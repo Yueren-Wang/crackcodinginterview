@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TreeAndGraphCommonLib
 {
-    class graph
+    public class graph
     {
 
         public int V { get; set; } //no of vertices
@@ -14,7 +14,7 @@ namespace TreeAndGraphCommonLib
 
         public void addDirectedEdge (graphnode node1, graphnode node2 )
         {
-            this.graphnodelist.Where(n => n == node1).FirstOrDefault().children.Add(node2);
+            node1.children.Add(node2);
         }
 
         public void addIndirectedEdge(graphnode node1, graphnode node2)

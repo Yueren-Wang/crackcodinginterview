@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 namespace TreeAndGraphCommonLib
 {
-    class graphnode
+    public class graphnode
     {
         public int value { get; set; }
         public List<graphnode> children { get; set; }
 
         public bool visited { get; set; }
-        public graphnode()
+        public graphnode(int value)
         {
             this.visited = false;
+            this.value = value;
+            this.children = new List<graphnode>();
         }
     }
 }
