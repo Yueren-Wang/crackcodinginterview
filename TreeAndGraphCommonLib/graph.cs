@@ -23,5 +23,11 @@ namespace TreeAndGraphCommonLib
             this.graphnodelist.Where(n => n == node2).FirstOrDefault().children.Add(node1);
 
         }
+
+        public static void resetGraphnodevistedboolean(graph g)
+        {
+            g.graphnodelist.ForEach(n => n.visited = false);
+        }
+
     }
 }
